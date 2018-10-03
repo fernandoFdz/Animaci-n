@@ -31,6 +31,7 @@ namespace Animacion
 
         public void DeleteFrame()
         {
+               
             Frames.Clear();
            // MessageBox.Show("paso aqui");
             

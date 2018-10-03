@@ -74,6 +74,7 @@ namespace Animacion
             Bitmap up = aUp.GetCurrentFrame();
             if (b != null)
             {
+
                 e.Graphics.DrawImage(b, x, y, 100, 100);
                 Ex.Dibujar(e);
             }
@@ -105,6 +106,7 @@ namespace Animacion
             Invalidate();
             switch (e.KeyData)
             {
+                
                 case Keys.Left:
                     if(x >= -5 && x < this.Width)
                     {
@@ -119,12 +121,12 @@ namespace Animacion
                     }
                     break;
                 case Keys.Right:
-                    if (x >= -5 && x < this.Width-100)
+                    if (x >= -10 && x < this.Width-100)
                     {
-                        if(x +tam >= Ex.Dx - (tam/2)&& y >= Ex.Dy && y < Ex.Dy + tam)
+                        if(x +tam >= Ex.Dx - tam && y >= Ex.Dy && y < Ex.Dy + tam)
 
                         {
-                            MessageBox.Show("tocar :v");
+                            //MessageBox.Show("tocar :v");
                             x -= 10;
                         }
                         // if (x < Ex.Dx && y > Ex.Dy) 
@@ -145,7 +147,7 @@ namespace Animacion
                     {
                         if (x >= Ex.Dx-tam && x < Ex.Dx + tam && y+tam > Ex.Dy-tam)
                         {
-                            MessageBox.Show("tocar");
+                           // MessageBox.Show("tocar");
                             y -= 10;
                         }
                             d.DeleteFrame();
@@ -163,7 +165,7 @@ namespace Animacion
                     {
                         if (x > Ex.Dx-tam && x < Ex.Dx + tam && y < Ex.Dy+tam)
                         {
-                            MessageBox.Show("tocar:v");
+                            //MessageBox.Show("tocar:v");
                             y += 10;
                         }
                             ab.DeleteFrame();
