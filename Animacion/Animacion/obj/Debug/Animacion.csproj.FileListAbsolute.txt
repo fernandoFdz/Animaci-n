@@ -1,0 +1,9 @@
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\bin\Debug\Animacion.exe.config
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\bin\Debug\Animacion.exe
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\bin\Debug\Animacion.pdb
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.Form1.resources
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.Properties.Resources.resources
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.csproj.GenerateResource.Cache
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.exe
+C:\Users\Fernando\Documents\Universidad\Programación Visual\Semestre 2018-2019 l\Tercer Parcial\Animacion\Animacion\obj\Debug\Animacion.pdb
