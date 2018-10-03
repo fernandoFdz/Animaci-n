@@ -14,10 +14,10 @@ namespace Animacion
     {      
         Image imagen;
         Image enemi;
-        aDer d;
-        aIzq i;
-        Abajo down;
-        Arriba aUp;
+        Anima d;
+        Anima i;
+        Anima down;
+        Anima aUp;
         Anima ab;
         Timer t;
         Enemigo Ex;
@@ -35,11 +35,11 @@ namespace Animacion
             enemi = Image.FromFile("malo.png");
             imagen = Image.FromFile("img1.png");
             t.Start();
-            i = new aIzq();
+            i = new Anima();
             ab = new Anima();
-            aUp = new Arriba();
-            d = new aDer();
-            down = new Abajo();
+            aUp = new Anima();
+            d = new Anima();
+            down = new Anima();
             Ex = new Enemigo(200, 200, enemi,tam);
             
 
@@ -121,6 +121,12 @@ namespace Animacion
                 case Keys.Right:
                     if (x >= -5 && x < this.Width-100)
                     {
+                        if(x +tam >= Ex.Dx - (tam/2)&& y >= Ex.Dy && y < Ex.Dy + tam)
+
+                        {
+                            MessageBox.Show("tocar :v");
+                            x -= 10;
+                        }
                         // if (x < Ex.Dx && y > Ex.Dy) 
                         ab.DeleteFrame();
                         aUp.DeleteFrame();
@@ -137,7 +143,12 @@ namespace Animacion
                 case Keys.Down:
                     if (y >= -5 && y < this.Height-100)
                     {
-                        d.DeleteFrame();
+                        if (x >= Ex.Dx-tam && x < Ex.Dx + tam && y+tam > Ex.Dy-tam)
+                        {
+                            MessageBox.Show("tocar");
+                            y -= 10;
+                        }
+                            d.DeleteFrame();
                         i.DeleteFrame();
                         ab.DeleteFrame();
                         aUp.DeleteFrame();
@@ -150,7 +161,12 @@ namespace Animacion
                 case Keys.Up:
                     if (y >= -5 && y < this.Height-100)
                     {
-                        ab.DeleteFrame();
+                        if (x > Ex.Dx-tam && x < Ex.Dx + tam && y < Ex.Dy+tam)
+                        {
+                            MessageBox.Show("tocar:v");
+                            y += 10;
+                        }
+                            ab.DeleteFrame();
                         i.DeleteFrame();
                         down.DeleteFrame();
                         d.DeleteFrame();
